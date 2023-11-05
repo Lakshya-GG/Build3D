@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="layout.css">
+
+    <!-- <link rel="stylesheet" href="animate.css"> -->
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+          <h1>Upload your Design <img src="file_img.png" alt="#" height="35" width="30"></h1> 
+          <h3>(.stl, .obj, .fbx, .dae)</h3>
+          <div class="upload-container">
+            <div class="border-container">
+              <div class="icons fa-4x">
+                <i class="fas fa-file-image" data-fa-transform="shrink-3 down-2 left-6 rotate--45"></i>
+                <i class="fas fa-file-alt" data-fa-transform="shrink-2 up-4"></i>
+                <i class="fas fa-file-pdf" data-fa-transform="shrink-3 down-2 right-6 rotate-45"></i>
+              </div>
+              <!--<input type="file" id="file-upload">-->
+              <p>Drag and drop files here, or browse your computer.</p>
+              <br>
+                    
+                    <input type="file" id="real-file" hidden="hidden" />
+                    <button type="button" id="custom-button">CHOOSE A FILE</button>
+                    <span id="custom-text">No file chosen, yet.</span>
+                    <br>
+                    <br>
+                    <div>
+                      <button type="button" id="custom-button2">Redirect to Website</button>
+
+                        <script>
+                        document.getElementById("custom-button2").addEventListener("click", function() {
+                            window.location.href = "../index.html"; // Replace with the actual filename of the HTML file
+                        });
+                        </script>
+
+                    </div>
+                    <script type = "text/javascript" src="uploader.js">
+                          // $(window).on("load",function(){
+                          // $(".loader-wrapper").fadeOut("slow");
+                        // });
+                    </script>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>
